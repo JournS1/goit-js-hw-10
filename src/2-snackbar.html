@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 4</title>
+    <title>Generator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,29 +19,33 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./css/2-form.css" />
+    <link rel="stylesheet" href="./css/2-snackbar.css" />
   </head>
   <body>
-    <div class="container">
+    <main>
       <p><a href="./index.html" class="back-link">Go back</a></p>
 
-      <form class="feedback-form">
-        <div class="input-wrap">
-          <label class="label">
-            Email
-            <input type="email" name="email" class="login-input" />
-          </label>
+      <form class="form">
+        <label class="label-delay">
+          Delay (ms)
+          <input type="number" name="delay" required  class="input-delay"/>
+        </label>
 
+        <fieldset class="fieldset">
+          <legend class="legend-state">State</legend>
           <label class="label">
-            Message
-            <textarea name="message" rows="8" class="message-textarea"></textarea>
+            <input  class="input" type="radio" name="state" value="fulfilled" required />
+            Fulfilled
           </label>
-        </div>
+          <label class="label">
+            <input class="input" type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
 
-        <button type="submit" class="submit-btn">Submit</button>
+        <button class="btn-create" type="submit">Create notification</button>
       </form>
-
-      <script src="./js/2-form.js" type="module"></script>
-    </div>
+    </main>
+    <script src="./js/2-snackbar.js" type="module"></script>
   </body>
 </html>
