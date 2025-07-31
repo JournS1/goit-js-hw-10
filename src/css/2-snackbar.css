@@ -32,9 +32,6 @@ body {
   transform: translateY(0);
 }
 
-.form {
-}
-
 .label-delay {
   display: flex;
   flex-direction: column;
@@ -50,8 +47,14 @@ body {
 .input-delay {
   border-radius: 4px;
   border: 1px solid #808080;
+  padding: 8px 0 8px 16px;
   width: 360px;
   height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 .fieldset {
