@@ -1,5 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import warningIcon from '../img/warning-img.png';
+import okIcon from '../img/ok-img.png';
 
 const form = document.querySelector('.form');
 
@@ -19,7 +21,7 @@ form.addEventListener('submit', event => {
         messageSize: '16px',
         backgroundColor: '#59a10d',
         position: 'topRight',
-        iconUrl: '../img/ok-img.png',
+        iconUrl: okIcon,
       });
     })
     .catch(delay => {
@@ -31,7 +33,7 @@ form.addEventListener('submit', event => {
         messageSize: '16px',
         backgroundColor: '#ef4040',
         position: 'topRight',
-        iconUrl: '../img/warning-img.png',
+        iconUrl: warningIcon,
       });
     });
 

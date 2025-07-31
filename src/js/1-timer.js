@@ -2,6 +2,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import warningIcon from '../img/warning-img.png';
 
 const refs = {
   input: document.querySelector('#datetime-picker'),
@@ -58,7 +59,7 @@ const options = {
         messageSize: '16px',
         backgroundColor: '#ef4040',
         position: 'topRight',
-        iconUrl: '../img/warning-img.png',
+        iconUrl: warningIcon,
       });
       refs.startBtn.disabled = true;
     } else {
